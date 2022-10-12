@@ -8,6 +8,13 @@ const Alert = () => {
 	text4Orange:"Well, it is not that bad after all!"
   };
   //your component here
+  return (
+    <div class={`alert ${colorClasses.color==="red"?"alert-danger":"alert-warning"}`} role="alert">
+     { colorClasses.color==="red"?colorClasses.text4Red:colorClasses.text4Orange}
+    </div>
+  );
+};
+
 
 };
 
